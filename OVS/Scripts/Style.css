@@ -1,0 +1,128 @@
+﻿body {
+}
+
+.page {
+    width: 1200px;
+    margin: 0px auto 0px auto;
+}
+
+.div {
+    margin: 0px auto 0px auto;
+}
+
+#Header {
+    height: 120px;
+    background-color: cornflowerblue;
+    background-image: url(images/polling_banner.jpg);
+}
+
+#contentpart {
+    background-image: url(images/evoting.jpg);
+}
+
+.navmenu {
+    height: 20px;
+    width: 1200px;
+    background-color: olivedrab;
+}
+
+input:only-of-type[type=text] {
+    width: 200px;
+    height: 20px;
+    background-color: limegreen;
+}
+
+input:only-of-type[type=date] {
+    width: 200px;
+    height: 20px;
+    background-color: limegreen;
+}
+
+.date {
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: limegreen;
+}
+
+input:only-of-type[type=password] {
+    width: 200px;
+    height: 20px;
+    background-color: limegreen;
+}
+
+input:only-of-type[type=label] {
+    width: 200px;
+    height: 20px;
+    background-color: limegreen;
+}
+
+#cuser {
+    align-content: flex-end;
+}
+
+.mydropdownlist {
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: limegreen;
+}
+
+#footer {
+    height: 70px;
+    background-color: cornflowerblue;
+}
+
+.marquee {
+    color: #00FF00;
+    font-weight: bold;
+}
+
+.style1 {
+    color: #808000;
+    font-weight: bold;
+}
+
+.style3 {
+    color: #00FF00;
+    font-weight: bold;
+}
+
+.style4 {
+    text-align: center;
+    width: 158px;
+}
+
+
+.style5 {
+    width: 224px;
+    height: 190px;
+}
+
+.style6 {
+    width: 222px;
+    height: 191px;
+}
+
+.style7 {
+    width: 222px;
+    height: 192px;
+}
+
+.style8 {
+    width: 221px;
+    height: 190px;
+}
+
+.style9 {
+    width: 227px;
+    height: 190px;
+}
+
+.address-1 {
+    float: right;
+}
+
+.address-2 {
+    overflow: hidden;
+}

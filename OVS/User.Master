@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.Master.cs" Inherits="OVS.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <link href="Scripts/Style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Voting System - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+    </asp:PlaceHolder>
+
+</head>
+<body>
+     <form id="form1" runat="server">
+         <div class="page">
+    <div id="Header">
+        <div align="right">
+             <asp:Label ID="lblDate" runat="server" Text="01/01/1990"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp; 
+             <asp:Label ID="lblTime" runat="server" Text="00:00:00"></asp:Label>
+     &nbsp;&nbsp;
+       
+            
+            <asp:Label ID="cuser" runat="server" Text="Current User"></asp:Label>&nbsp; 
+        </div>
+        <div align="Left"><img src="Images/polling_banner.jpg"/></div>
+        <div>
+        <asp:Menu ID="navmenu" runat="server" Orientation="Horizontal" ForeColor="White" Font-Bold="True" Font-Size="Large" align="Right" Height="20px" ItemWrap="True">
+            <Items>
+                 <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="About Us" NavigateUrl="~/About.aspx" Value="About Us"></asp:MenuItem>
+               <asp:MenuItem Text="Vote Candidate" NavigateUrl="~/VoteCandidate.aspx" Value="VCandidate"></asp:MenuItem>
+               <asp:MenuItem Text="Voter LIsts" NavigateUrl="~/VoterLists.aspx" Value="VList"></asp:MenuItem>
+               <asp:MenuItem Text="Candidate Lists" NavigateUrl="~/CandidateLists.aspx" Value="CList"></asp:MenuItem>
+                <asp:MenuItem Text="Feedback" NavigateUrl="~/Feedback.aspx" Value="Feedback"></asp:MenuItem>    
+                 <asp:MenuItem Text="Contact" NavigateUrl="~/Contact.aspx" Value="Contact"></asp:MenuItem>
+            <asp:MenuItem Text="Result" NavigateUrl="~/Result.aspx" Value="Result"></asp:MenuItem>
+            </Items>
+
+            <StaticHoverStyle BackColor="#33CC33" />
+           
+
+        </asp:Menu>
+            </div>
+    </div>
+
+        
+              <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+                </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer" align="center">
+
+
+           <h4>All Rights Reserve &copy; Online Voting System 2019 <br />
+               Powered By <asp:HyperLink 
+            ID="HyperLink1" runat="server" Text="Mahesh Prasad Timilsina" NavigateUrl="www.maheshprasadtimilsina.com.np">
+        </asp:HyperLink>
+           </h4></div>
+       </div>
+       
+    </form>
+</body>
+</html>
